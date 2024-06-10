@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea name="from" class="from-text" placeholder="Enter Text" id="from-text"></textarea>
+                <textarea name="to" class="to-text" id="to-text" readonly placeholder="Translation will appear here"></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <i id="from-speak" class="fa-solid fa-volume-high" aria-label="Speak from text"></i>
+                        <i id="from-copy" class="fa-solid fa-copy" aria-label="Copy from text"></i>
+                    </div>
+                    <select aria-label="Select source language"></select>
+                </li>
+                <li class="exchange">
+                    <i class="fa-solid fa-arrow-right-arrow-left" aria-label="Exchange languages"></i>
+                </li>
+                <li class="row to">
+                    <select aria-label="Select target language"></select>
+                    <div class="icons">
+                        <i id="to-copy" class="fa-solid fa-copy" aria-label="Copy to text"></i>
+                        <i id="to-speak" class="fa-solid fa-volume-high" aria-label="Speak to text"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button aria-label="Translate Text">Translate Text</button>
+    </div>
+
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
